@@ -1,7 +1,10 @@
 ---
+keep_md: true
 output:
   html_document:
     df_print: paged
+  md_document:
+    variant: markdown_github
 ---
 ## Get your own Linux
 1. Go to [https://vcm.duke.edu/](https://vcm.duke.edu/) and click reserve a VM.  
@@ -61,6 +64,8 @@ conda activate qiime2-2019.10
 #check qiime2 is available
 qiime --help
 ```
+
+![](./snapshots/qiime_help.png)
 
 ## Every time log in
 ```{bash, eval=FALSE}

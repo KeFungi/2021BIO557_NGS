@@ -66,6 +66,8 @@ conda activate qiime2-2019.10
 qiime --help
 ```
 
+![](./snapshots/qiime_help.png)
+
 Every time log in
 -----------------
 
