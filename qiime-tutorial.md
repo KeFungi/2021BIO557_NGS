@@ -1,3 +1,15 @@
+-   [Overview](#overview)
+-   [Download data](#download-data)
+-   [Import data](#import-data)
+-   [Demultiplex (assign sequences to
+    samples)](#demultiplex-assign-sequences-to-samples)
+-   [Filter and clean sequencing
+    error](#filter-and-clean-sequencing-error)
+-   [Infer phylogenetic tree](#infer-phylogenetic-tree)
+-   [Run diveristy analysis](#run-diveristy-analysis)
+-   [Rarefaction](#rarefaction)
+-   [Taxonomic assignment](#taxonomic-assignment)
+
 ### Overview
 
 This is a tutorial based on [Moving
@@ -90,9 +102,9 @@ wget -nv https://data.qiime2.org/2019.1/tutorials/moving-pictures/emp-single-end
 wget -nv https://data.qiime2.org/2019.1/tutorials/moving-pictures/sample_metadata.tsv
 ```
 
-    ## 2021-03-15 16:09:04 URL:https://s3-us-west-2.amazonaws.com/qiime2-data/2019.1/tutorials/moving-pictures/emp-single-end-sequences/sequences.fastq.gz [25303756/25303756] -> "sequences.fastq.gz" [1]
-    ## 2021-03-15 16:09:05 URL:https://s3-us-west-2.amazonaws.com/qiime2-data/2019.1/tutorials/moving-pictures/emp-single-end-sequences/barcodes.fastq.gz [3783785/3783785] -> "barcodes.fastq.gz" [1]
-    ## 2021-03-15 16:09:06 URL:https://doc-0o-6o-sheets.googleusercontent.com/export/l5l039s6ni5uumqbsj9o11lmdc/m6huuikika277gvvq9tj7qulvk/1615838945000/103995680502445084602/*/1yFL_Mwh7b5LE5vW06KooZFB_cjoEJEXGFwhos6X7jns?gid=0&format=tsv [3785] -> "sample_metadata.tsv" [1]
+    ## 2021-03-15 16:20:00 URL:https://s3-us-west-2.amazonaws.com/qiime2-data/2019.1/tutorials/moving-pictures/emp-single-end-sequences/sequences.fastq.gz [25303756/25303756] -> "sequences.fastq.gz" [1]
+    ## 2021-03-15 16:20:06 URL:https://s3-us-west-2.amazonaws.com/qiime2-data/2019.1/tutorials/moving-pictures/emp-single-end-sequences/barcodes.fastq.gz [3783785/3783785] -> "barcodes.fastq.gz" [1]
+    ## 2021-03-15 16:20:07 URL:https://doc-0o-6o-sheets.googleusercontent.com/export/l5l039s6ni5uumqbsj9o11lmdc/lkddhiu7kelcai2i7d5hb8cu84/1615839605000/103995680502445084602/*/1yFL_Mwh7b5LE5vW06KooZFB_cjoEJEXGFwhos6X7jns?gid=0&format=tsv [3785] -> "sample_metadata.tsv" [1]
 
 ``` bash
 #check how .fastq files look like
